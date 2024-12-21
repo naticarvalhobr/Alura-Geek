@@ -17,7 +17,8 @@
         <section class="container">
             <div class="produtos">
                 <img id="container__imgMeusProdutos" src="Images/meusProdutosTxt.png" alt="Meus Produtos">
-                <div class="card">
+                <ul class="produtos__container" alt="produtos alura" data-lista></ul>
+                <!--<div class="card">
                     <img src="images/stormtrooper.png" alt="Stormtrooper">
                     <div class="card-container--info">
                         <p>Stormtrooper</p>
@@ -26,26 +27,26 @@
                             <img src="images/lixeiraIcon.png" alt="Excluir">
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
             <div class="addProduto">
                 <img id="container__imgAddProduto" src="Images/addProdutoTxt.png" alt="Adicionar produto:">
-                <form class="form__addProduto" action="#" method="post">
+                <form class="form__addProduto" action="#" method="post" data-formulario>
                     <div>
-                        <label for="productName">Nome...</label>
-                        <input type="text" id="productName" name="productName" required>
+                        <label for="productName">Nome...</label><br>
+                        <input type="text" id="productName" name="productName" required data-nome>
                     </div>
                     <div>
-                        <label for="productPrice">Valor...</label>
-                        <input type="text" id="productPrice" name="productPrice" required>
+                        <label for="productPrice">Valor...</label><br>
+                        <input type="text" id="productPrice" name="productPrice" required data-valor>
                     </div>
                     <div>
-                        <label for="productImage">Imagem...</label>
-                        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+                        <label for="productImage">Imagem...</label><br>
+                        <input type="file" id="productImage" name="productImage" accept="image/*" required data-imagem>
                     </div>
                     <div class="button-container">
-                        <button type="submit">Guardar</button>
-                        <button type="reset">Limpar</button>
+                        <button class="guardarButton" type="submit">Guardar</button>
+                        <button class="limparButton" type="reset">Limpar</button>
                     </div>
                 </form>
             </div>

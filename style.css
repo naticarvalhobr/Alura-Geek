@@ -67,9 +67,59 @@ main {
 }
 
 .addProduto {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+}
+
+#container__imgAddProduto {
+    margin-bottom: 30px;
+}
+
+label {
+    font-family: "IBM Plex Mono", serif;
+    color: #03318C;
+}
+
+input {
+    margin: 10px;
+    height: 30px;
+    width: 300px;
+    border: 2px solid #03318C;
+    border-radius: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.guardarButton {
+    width: 150px;
+    height: 40px;
+    background-color: #03318C;
+    border: 1px solid #03318C;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", serif;
+    font-size: 15px;
+}
+
+.limparButton {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #03318C;
+    border-radius: 15px;
+    color: #03318C;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", serif;
+    font-size: 15px;
 }
 
 footer {

@@ -1,0 +1,9 @@
+{
+  "produtos": [
+      {
+          "nome": "Stormtrooper",
+          "valor": 60.00,
+          "imagem": "./images/stormtrooper.jpg"
+      }
+  ]
+}
