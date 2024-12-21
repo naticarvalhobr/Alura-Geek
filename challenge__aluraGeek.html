@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section class="container">
+            <div class="produtos">
+                <img id="container__imgMeusProdutos" src="Images/meusProdutosTxt.png" alt="Meus Produtos">
+                <div class="card">
+                    <img src="images/stormtrooper.png" alt="Stormtrooper">
+                    <div class="card-container--info">
+                        <p>Stormtrooper</p>
+                        <div class="card-container--value">
+                            <p>Preço: $60,00</p>
+                            <img src="images/lixeiraIcon.png" alt="Excluir">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addProduto">
+                <img id="container__imgAddProduto" src="Images/addProdutoTxt.png" alt="Adicionar produto:">
+                <form class="form__addProduto" action="#" method="post">
+                    <div>
+                        <label for="productName">Nome...</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+                    <div>
+                        <label for="productPrice">Valor...</label>
+                        <input type="text" id="productPrice" name="productPrice" required>
+                    </div>
+                    <div>
+                        <label for="productImage">Imagem...</label>
+                        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Guardar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
