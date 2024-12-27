@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
@@ -18,20 +17,11 @@
             <div class="produtos">
                 <img id="container__imgMeusProdutos" src="Images/meusProdutosTxt.png" alt="Meus Produtos">
                 <ul class="produtos__container" alt="produtos alura" data-lista></ul>
-                <!--<div class="card">
-                    <img src="images/stormtrooper.png" alt="Stormtrooper">
-                    <div class="card-container--info">
-                        <p>Stormtrooper</p>
-                        <div class="card-container--value">
-                            <p>Preço: $60,00</p>
-                            <img src="images/lixeiraIcon.png" alt="Excluir">
-                        </div>
-                    </div>
-                </div>-->
             </div>
+        
             <div class="addProduto">
                 <img id="container__imgAddProduto" src="Images/addProdutoTxt.png" alt="Adicionar produto:">
-                <form class="form__addProduto" action="#" method="post" data-formulario>
+                <form class="form__addProduto" data-formulario>
                     <div>
                         <label for="productName">Nome...</label><br>
                         <input type="text" id="productName" name="productName" required data-nome>
@@ -54,5 +44,8 @@
     </main>
     <footer>
     </footer>
+
+    <script src="./js/criarProduto.js" type="module"></script>
+    <script src="./js/mostrarProdutos.js" type="module"></script>
 </body>
 </html>

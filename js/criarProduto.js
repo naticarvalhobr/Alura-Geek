@@ -7,6 +7,8 @@ async function criarProduto(evento) {
     const nome = document.querySelector("[data-nome]").value;
     const valor = document.querySelector("[data-valor]").value;
     const imagem = document.querySelector("[data-imagem]").value;
+
+    console.log("Dados a enviar:", { nome, valor, imagem });
     try {
         await conectaApi.criaProduto(nome, valor, imagem);
 
@@ -16,4 +18,4 @@ async function criarProduto(evento) {
     }
 }
 
-formulario.addEventListener("submit", evento => criarProduto(evento))
+formulario.addEventListener("submit", evento => criarProduto(evento));

@@ -43,27 +43,55 @@ main {
     margin-bottom: 30px;
 }
 
+.produtos__container {
+    min-height: 200px; /* Garante que sempre haja espaço para a lista */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .card {
-    background-color: #5D04D9;
-    padding: 10px;
-    border: 3px solid black;
-    border-radius: 5px;
+    background-color: #5D04D9; /* Fundo roxo */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 8px; /* Cantos arredondados */
+    width: 200px; /* Largura fixa do card */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    text-align: center; /* Centralizar o conteúdo */
+    font-family: "IBM Plex Mono", serif; /* Fonte padrão */
+    color: white; /* Texto em branco */
+}
+
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    border-radius: 5px; /* Cantos arredondados da imagem */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
 }
 
 .card-container--info p {
-    margin: 5px;
-    font-family: "IBM Plex Mono", serif;
+    margin: 5px 0; /* Margem entre textos */
+    font-size: 14px; /* Tamanho do texto */
 }
 
 .card-container--value {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* Espaçamento entre preço e ícone */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-container--value p {
+    font-size: 16px; /* Tamanho do texto do preço */
+    font-weight: bold; /* Destaque no valor */
+    color: white; /* Texto branco */
 }
 
 .card-container--value img {
-    width: 20px;
+    width: 20px; /* Ícone pequeno */
     height: 20px;
+    cursor: pointer; /* Cursor de clique no ícone */
 }
 
 .addProduto {
@@ -133,3 +161,8 @@ footer {
     bottom: 0;
 }
 
+.mensagem__titulo {
+    font-family: "IBM Plex Mono", serif;
+    color: black;
+    font-size: 15px;
+}

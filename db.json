@@ -1,9 +1,40 @@
 {
   "produtos": [
-      {
-          "nome": "Stormtrooper",
-          "valor": 60.00,
-          "imagem": "./images/stormtrooper.jpg"
-      }
+    {
+      "nome": "Stormtropper",
+      "valor": "R$ 49.99",
+      "imagem": "https://toymania.vtexassets.com/arquivos/ids/986690-800-auto?v=638446409458530000&width=800&height=auto&aspect=true",
+      "id": 1
+    },
+    {
+      "nome": "Game Boy Classic",
+      "valor": "R$ 60.00",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Game-Boy-FL.jpg",
+      "id": 2
+    },
+    {
+      "nome": "Game Boy Classic",
+      "valor": "R$ 60.00",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Game-Boy-FL.jpg",
+      "id": 3
+    },
+    {
+      "nome": "Game Boy Classic",
+      "valor": "R$ 60.00",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Game-Boy-FL.jpg",
+      "id": 4
+    },
+    {
+      "nome": "Game Boy Classic",
+      "valor": "R$ 60.00",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Game-Boy-FL.jpg",
+      "id": 5
+    },
+    {
+      "nome": "Game Boy Classic",
+      "valor": "R$ 60.00",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Game-Boy-FL.jpg",
+      "id": 6
+    }
   ]
 }
