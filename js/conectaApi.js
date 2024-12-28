@@ -1,12 +1,3 @@
-// conectaApi.js
-
-/*async function listaProdutos() {
-    const conexao = await fetch("http://localhost:3000/produtos");
-    const conexaoConvertida = await conexao.json();
-    
-    return conexaoConvertida;
-}*/
-
 async function listaProdutos() {
     try {
         const conexao = await fetch("http://localhost:3000/produtos");
@@ -56,7 +47,19 @@ async function criaProduto(nome, valor, imagem) {
     }
 }
 
+export async function excluirProdutoDaApi(id) {
+    const response = await fetch(`http://localhost:3000/produtos/${id}`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+    });
+
+    if (!response.ok) {
+        throw new Error(`Erro ao excluir produto: ${response.status}`);
+    }
+}
+
 export const conectaApi = { 
     listaProdutos,
-    criaProduto
+    criaProduto,
+    excluirProdutoDaApi
 };

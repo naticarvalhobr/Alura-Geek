@@ -4,6 +4,10 @@ body {
     padding-top: 0;
     padding-left: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+    width: 100%;
 }
 
 header {
@@ -21,13 +25,13 @@ main {
 }
 
 .container {
-    width: 100%;
+    max-width: 100%;
     padding-top: 110px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: 40px;
-    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 20px 20px 20px;
 }
 
 .produtos {
@@ -36,28 +40,32 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-right: 150px;
-}
-
-#container__imgMeusProdutos {
-    margin-bottom: 30px;
+    flex-grow: 2;
 }
 
 .produtos__container {
     min-height: 200px; /* Garante que sempre haja espaço para a lista */
     width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px; 
+    list-style: none;
+    align-items: center;
+    /*justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: center;*/
 }
 
 .card {
     background-color: #5D04D9; /* Fundo roxo */
     border: 2px solid #000; /* Borda preta */
     border-radius: 8px; /* Cantos arredondados */
-    width: 200px; /* Largura fixa do card */
-    padding: 10px; /* Espaçamento interno */
+    width: 170px; /* Largura fixa do card */
+    height: 350px;
+    padding: 20px; /* Espaçamento interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
     text-align: center; /* Centralizar o conteúdo */
     font-family: "IBM Plex Mono", serif; /* Fonte padrão */
@@ -66,8 +74,11 @@ main {
 
 .card img {
     width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 200px;
     border-radius: 5px; /* Cantos arredondados da imagem */
     margin-bottom: 10px; /* Espaço abaixo da imagem */
+    max-height: 200px;  /* Garante que a altura da imagem não ultrapasse 200px */
+    object-fit: cover;
 }
 
 .card-container--info p {
@@ -92,13 +103,21 @@ main {
     width: 20px; /* Ícone pequeno */
     height: 20px;
     cursor: pointer; /* Cursor de clique no ícone */
+    margin-bottom: 0px;
+}
+
+.botao-excluir {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0; /* Remove o preenchimento do botão */
+    margin-bottom: 0px;
 }
 
 .addProduto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     margin-top: 50px;
 }
 
